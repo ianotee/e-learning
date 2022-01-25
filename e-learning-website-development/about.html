@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One World Institute</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo image" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="course.html">Course</a>
+              <a href="blog.html">Blog</a>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!-- section end for masthead -->
+
+    <!-- about us content -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-us-col">
+          <h1>We are the Universal Learning Platform</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            quis repellendus illo vel voluptatibus culpa recusandae in ullam
+            consectetur ratione minima, ea dolores assumenda quidem repellat
+            quod soluta odit eius. Id dignissimos dolore adipisci tenetur porro,
+            non voluptatem quaerat quia, reprehenderit perferendis, dolorum nam
+            excepturi distinctio accusantium est ipsum eum.
+          </p>
+          <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-us-col">
+          <img src="./images/aboutus.jpg" alt="meeting" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In harum
+        laborum nisi modi ex quis autem obcaecati qui fugiat. <br />
+        Laboriosam ipsa repudiandae nostrum, vero vitae cupiditate libero enim
+        nisi consequatur.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> By Digital Space Guru</p>
+    </section>
+    <!-- end of footer section -->
+    <!-- javascript for Toggle -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
